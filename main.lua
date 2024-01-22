@@ -3,7 +3,7 @@ require 'Personaje'
 require 'Terrain'
 require 'Weapon'
 require 'Cursor'
-
+--Esto es un comentario inutil
 DefaultFont = love.graphics.getFont()
 StructureFont = love.graphics.newFont("squarethings2.ttf")
 StructureFont:setFilter('nearest')
