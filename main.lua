@@ -3,7 +3,6 @@ require 'Personaje'
 require 'Terrain'
 require 'Weapon'
 require 'Cursor'
-love = love
 
 DefaultFont = love.graphics.getFont()
 StructureFont = love.graphics.newFont("squarethings2.ttf")
