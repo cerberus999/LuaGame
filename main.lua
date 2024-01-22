@@ -39,9 +39,9 @@ function love.draw()
   love.graphics.setFont(DefaultFont)
   love.graphics.print(type(map),150,150)
   Personaje:draw()
+  Sword:draw()
   Cursor:draw()
   -- love.graphics.draw(Sword,0,0)
-  Sword:draw()
 
   -- love.graphics.print(text, 500, 500)
 end
