@@ -3,8 +3,7 @@ require 'Personaje'
 require 'Terrain'
 require 'Weapon'
 require 'Cursor'
-love = love
-
+--Esto es un comentario inutil
 DefaultFont = love.graphics.getFont()
 StructureFont = love.graphics.newFont("squarethings2.ttf")
 StructureFont:setFilter('nearest')
@@ -39,9 +38,9 @@ function love.draw()
   love.graphics.setFont(DefaultFont)
   love.graphics.print(type(map),150,150)
   Personaje:draw()
+  Sword:draw()
   Cursor:draw()
   -- love.graphics.draw(Sword,0,0)
-  Sword:draw()
 
   -- love.graphics.print(text, 500, 500)
 end

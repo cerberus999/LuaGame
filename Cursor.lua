@@ -1,12 +1,12 @@
 Class = require 'class'
-Menu = require 'Menu'
+require 'Menu'
 
+menu = Menu()
 Cursor = Class{
   init = function (self)
     self.x = 0
     self.y = 100
-
-    self.menu = Menu:init()
+    self.menu = Menu()
   end;
 
   move = function(self, dir)
@@ -27,8 +27,5 @@ Cursor = Class{
   end;
 
   select = function ()
-    if self.x AND self.y then
-      
-    end
   end;
 }
