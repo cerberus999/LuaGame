@@ -6,7 +6,8 @@ Cursor = Class{
   init = function (self)
     self.x = 0
     self.y = 100
-    self.menu = Menu()
+    self.menu = love.graphics.newImage('Scene/Menux.png')
+    self.showM = false
   end;
 
   move = function(self, dir)
@@ -29,7 +30,12 @@ Cursor = Class{
     love.graphics.setColor(r,g,b,a);
   end;
 
+<<<<<<< HEAD
   select = function ()
     love.graphics.newImage("./Scene/Menux.png")
+=======
+  select = function (self)
+    self.showM = not self.showM
+>>>>>>> 22e93172efb307e6ce37cede01ed6c98eda69294
   end;
 }

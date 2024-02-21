@@ -11,6 +11,8 @@ DefaultFont = love.graphics.getFont()
 StructureFont = love.graphics.newFont("squarethings2.ttf")
 StructureFont:setFilter('nearest')
 
+Key = ''
+
 function love.load()
 
   map = {}
