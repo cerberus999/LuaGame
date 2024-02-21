@@ -23,9 +23,13 @@ Cursor = Class{
   end;
 
   draw = function (self)
+    r,g,b,a = love.graphics.getColor();
+    love.graphics.setColor(41/255,241/255,195/255,0.8);
     love.graphics.print("X", self.x, self.y, 0, 3.75, 3.75)
+    love.graphics.setColor(r,g,b,a);
   end;
 
   select = function ()
+    love.graphics.newImage("./Scene/Menux.png")
   end;
 }
